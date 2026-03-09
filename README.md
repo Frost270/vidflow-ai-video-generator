@@ -113,6 +113,10 @@ The AI will generate a short video based on the prompt.
 
 ---
 
+## 📸 Demo
+
+![App Screenshot](screenshots/demo.png)
+
 ## 👨‍💻 Author
 
 **Ankush Chaudhary**
