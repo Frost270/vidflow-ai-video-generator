@@ -1,28 +1,22 @@
-import cv2
+from prompt_engine import expand_prompt
+from image_generator import generate_image
+from video_renderer import create_video
 import os
 
-def create_video():
 
-    image_folder = "frames"
-    video_path = "outputs/video.mp4"
+def generate_video(prompt):
 
-    images = sorted(os.listdir(image_folder))
+    # clear old frames
+    if os.path.exists("frames"):
+        for f in os.listdir("frames"):
+            os.remove(f"frames/{f}")
 
-    frame = cv2.imread(os.path.join(image_folder, images[0]))
+    scenes = expand_prompt(prompt)
 
-    height, width, Layers = frame.shape
+    for i, scene in enumerate(scenes):
 
-    os.makedirs("outputs", exist_ok=True)
+        generate_image(scene, i)
 
-    video = cv2.VideoWriter(video_path, 0, 5, (width, height))
+    video = create_video()
 
-    for image in images:
-
-        img_path = os.path.join(image_folder, image)
-
-        video.write(cv2.imread(img_path))
-
-    video.release()
-
-    return video_path
-
+    return video
