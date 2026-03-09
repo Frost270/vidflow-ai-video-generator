@@ -48,6 +48,7 @@ Final Video Output
 ---
 
 ## 📂 Project Structure
+
 vidflow/
 │
 ├── app.py
@@ -66,12 +67,15 @@ vidflow/
 ## ⚙️ Installation
 
 Clone the repository:
+
 git clone https://github.com/Frost270/vidflow-ai-video-generator.git
 
 Navigate to the project folder:
+
 cd vidflow-ai-video-generator
 
 Install dependencies:
+
 pip install -r requirements.txt
 
 
