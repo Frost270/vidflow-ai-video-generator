@@ -116,6 +116,7 @@ The AI will generate a short video based on the prompt.
 ## 📸 Demo
 
 ![App Screenshot](screenshots/demo.png)
+![App Screenshot](screenshots/demo_1.png)
 
 ## 👨‍💻 Author
 
