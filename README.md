@@ -6,7 +6,7 @@
 
 VidFlow is an AI-powered application that generates short videos from text prompts using diffusion models.
 
-The system converts a user prompt into multiple scenes, generates images using Stable Diffusion, and combines them into a video.
+The system converts a user prompt into multiple scenes, generates images using Stable Diffusion, and combines them into a video
 
 ---
 
